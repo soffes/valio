@@ -9,36 +9,17 @@
 /* Begin PBXBuildFile section */
 		2110727019411B14003C2A67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2110726F19411B14003C2A67 /* AppDelegate.swift */; };
 		2110727219411B14003C2A67 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2110727119411B14003C2A67 /* Images.xcassets */; };
-		2110727E19411B14003C2A67 /* ValioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2110727D19411B14003C2A67 /* ValioTests.swift */; };
 		2110728A19411C03003C2A67 /* ScheduleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2110728919411C03003C2A67 /* ScheduleTableViewController.swift */; };
 		2110728C19412E5F003C2A67 /* valio.json in Resources */ = {isa = PBXBuildFile; fileRef = 2110728B19412E5F003C2A67 /* valio.json */; };
 		21E1A45319423F5200A69E93 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E1A45219423F5200A69E93 /* SectionHeaderView.swift */; };
 		21E21642194232DC00134640 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E21641194232DC00134640 /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2110727819411B14003C2A67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2110726219411B14003C2A67 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2110726919411B14003C2A67;
-			remoteInfo = Valio;
-		};
-		21F3B4F81942482E0064A456 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2110726219411B14003C2A67 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2110726919411B14003C2A67;
-			remoteInfo = Valio;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		2110726A19411B14003C2A67 /* Valio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Valio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2110726E19411B14003C2A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2110726F19411B14003C2A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2110727119411B14003C2A67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2110727719411B14003C2A67 /* ValioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2110727C19411B14003C2A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2110727D19411B14003C2A67 /* ValioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValioTests.swift; sourceTree = "<group>"; };
 		2110728919411C03003C2A67 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
@@ -49,13 +30,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		2110726719411B14003C2A67 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2110727419411B14003C2A67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -78,7 +52,6 @@
 			isa = PBXGroup;
 			children = (
 				2110726A19411B14003C2A67 /* Valio.app */,
-				2110727719411B14003C2A67 /* ValioTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,13 +59,12 @@
 		2110726C19411B14003C2A67 /* Valio */ = {
 			isa = PBXGroup;
 			children = (
-				2110728B19412E5F003C2A67 /* valio.json */,
 				2110726F19411B14003C2A67 /* AppDelegate.swift */,
-				2110727119411B14003C2A67 /* Images.xcassets */,
-				2110726D19411B14003C2A67 /* Supporting Files */,
 				2110728919411C03003C2A67 /* ScheduleTableViewController.swift */,
 				21E21641194232DC00134640 /* ItemTableViewCell.swift */,
 				21E1A45219423F5200A69E93 /* SectionHeaderView.swift */,
+				2110727119411B14003C2A67 /* Images.xcassets */,
+				2110726D19411B14003C2A67 /* Supporting Files */,
 			);
 			path = Valio;
 			sourceTree = "<group>";
@@ -100,6 +72,7 @@
 		2110726D19411B14003C2A67 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2110728B19412E5F003C2A67 /* valio.json */,
 				2110726E19411B14003C2A67 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -142,25 +115,6 @@
 			productReference = 2110726A19411B14003C2A67 /* Valio.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2110727619411B14003C2A67 /* ValioTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2110728419411B14003C2A67 /* Build configuration list for PBXNativeTarget "ValioTests" */;
-			buildPhases = (
-				2110727319411B14003C2A67 /* Sources */,
-				2110727419411B14003C2A67 /* Frameworks */,
-				2110727519411B14003C2A67 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2110727919411B14003C2A67 /* PBXTargetDependency */,
-				21F3B4F91942482E0064A456 /* PBXTargetDependency */,
-			);
-			name = ValioTests;
-			productName = ValioTests;
-			productReference = 2110727719411B14003C2A67 /* ValioTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,14 +122,10 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = "Nothing Magical Inc.";
+				ORGANIZATIONNAME = "Sam Soffes";
 				TargetAttributes = {
 					2110726919411B14003C2A67 = {
 						CreatedOnToolsVersion = 6.0;
-					};
-					2110727619411B14003C2A67 = {
-						CreatedOnToolsVersion = 6.0;
-						TestTargetID = 2110726919411B14003C2A67;
 					};
 				};
 			};
@@ -192,7 +142,6 @@
 			projectRoot = "";
 			targets = (
 				2110726919411B14003C2A67 /* Valio */,
-				2110727619411B14003C2A67 /* ValioTests */,
 			);
 		};
 /* End PBXProject section */
@@ -204,13 +153,6 @@
 			files = (
 				2110727219411B14003C2A67 /* Images.xcassets in Resources */,
 				2110728C19412E5F003C2A67 /* valio.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2110727519411B14003C2A67 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,28 +170,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2110727319411B14003C2A67 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2110727E19411B14003C2A67 /* ValioTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2110727919411B14003C2A67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2110726919411B14003C2A67 /* Valio */;
-			targetProxy = 2110727819411B14003C2A67 /* PBXContainerItemProxy */;
-		};
-		21F3B4F91942482E0064A456 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2110726919411B14003C2A67 /* Valio */;
-			targetProxy = 21F3B4F81942482E0064A456 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2110727F19411B14003C2A67 /* Debug */ = {
@@ -351,42 +272,6 @@
 			};
 			name = Release;
 		};
-		2110728519411B14003C2A67 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Valio.app/Valio";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ValioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Debug;
-		};
-		2110728619411B14003C2A67 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Valio.app/Valio";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = ValioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				METAL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,15 +289,6 @@
 			buildConfigurations = (
 				2110728219411B14003C2A67 /* Debug */,
 				2110728319411B14003C2A67 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		2110728419411B14003C2A67 /* Build configuration list for PBXNativeTarget "ValioTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2110728519411B14003C2A67 /* Debug */,
-				2110728619411B14003C2A67 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
