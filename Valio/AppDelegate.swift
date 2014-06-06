@@ -11,13 +11,15 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
-	var window: UIWindow?
+	@lazy var window: UIWindow = {
+		let win = UIWindow(frame: UIScreen.mainScreen().bounds)
+		win.backgroundColor = UIColor.whiteColor()
+		win.rootViewController = UINavigationController(rootViewController: ScheduleTableViewController())
+		return win
+	}()
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-		window = UIWindow(frame: UIScreen.mainScreen().bounds)
-		window!.backgroundColor = UIColor.whiteColor()
-		window!.rootViewController = UINavigationController(rootViewController: ScheduleTableViewController(nibName: nil, bundle: nil))
-		window!.makeKeyAndVisible()
+		window.makeKeyAndVisible()
 		return true
 	}
 }

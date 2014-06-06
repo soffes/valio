@@ -10,7 +10,7 @@ import UIKit
 
 class ScheduleTableViewController: UITableViewController {
 
-	let data: NSArray = {
+	@lazy var data: NSArray = {
 		let path = NSBundle.mainBundle().pathForResource("valio", ofType: "json")
 		let data = NSData.dataWithContentsOfFile(path, options: nil, error: nil)
 		return NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSArray
@@ -62,7 +62,7 @@ class ScheduleTableViewController: UITableViewController {
 	
 	override func tableView(tableView: UITableView!, viewForHeaderInSection section: Int) -> UIView! {
 		let day = data[section] as NSDictionary
-		let view = SectionHeaderView(effect: UIBlurEffect(style: .ExtraLight))
+		let view = SectionHeaderView()
 		view.titleLabel.text = (day["title"] as String).uppercaseString
 		return view
 	}

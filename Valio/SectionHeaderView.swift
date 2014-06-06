@@ -10,7 +10,7 @@ import UIKit
 
 class SectionHeaderView: UIVisualEffectView {
 
-	let titleLabel: UILabel = {
+	@lazy var titleLabel: UILabel = {
 		let label = UILabel()
 		label.setTranslatesAutoresizingMaskIntoConstraints(false)
 		label.font = UIFont(name: "Avenir", size: 18)
@@ -18,12 +18,16 @@ class SectionHeaderView: UIVisualEffectView {
 		return label
 	}()
 	
-	let lineView: UIView = {
+	@lazy var lineView: UIView = {
 		let view = UIView()
 		view.setTranslatesAutoresizingMaskIntoConstraints(false)
 		view.backgroundColor = UIColor(red: 0.906, green: 0.914, blue: 0.918, alpha: 1)
 		return view
 	}()
+	
+	convenience init() {
+		self.init(effect: UIBlurEffect(style: .ExtraLight))
+	}
 	
     init(effect: UIVisualEffect) {
         super.init(effect: UIBlurEffect(style: .Light))

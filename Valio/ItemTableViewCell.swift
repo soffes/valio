@@ -10,14 +10,14 @@ import UIKit
 import QuartzCore
 
 class ItemTableViewCell: UITableViewCell {
-	let titleLabel: UILabel = {
+	@lazy var titleLabel: UILabel = {
 		let label = UILabel()
 		label.setTranslatesAutoresizingMaskIntoConstraints(false)
 		label.font = UIFont(name: "Avenir", size: 16)
 		return label
 	}()
 	
-	let timeLabel: UILabel = {
+	@lazy var timeLabel: UILabel = {
 		let label = UILabel()
 		label.setTranslatesAutoresizingMaskIntoConstraints(false)
 		label.font = UIFont(name: "Avenir-Light", size: 16)
@@ -26,14 +26,14 @@ class ItemTableViewCell: UITableViewCell {
 		return label
 	}()
 	
-	let lineView: UIView = {
+	@lazy var lineView: UIView = {
 		let view = UIView()
 		view.setTranslatesAutoresizingMaskIntoConstraints(false)
 		view.backgroundColor = UIColor(red: 0.906, green: 0.914, blue: 0.918, alpha: 1)
 		return view
 	}()
 	
-	let circleView: UIView = {
+	@lazy var circleView: UIView = {
 		let view = UIView()
 		view.setTranslatesAutoresizingMaskIntoConstraints(false)
 		view.backgroundColor = UIColor.whiteColor()
@@ -42,16 +42,17 @@ class ItemTableViewCell: UITableViewCell {
 		return view
 	}()
 	
-	var minor: Bool? {
+	var minor: Bool {
 		didSet {
-			titleLabel.textColor = minor! ? timeLabel.textColor : UIColor(red: 0.227, green: 0.227, blue: 0.278, alpha: 1)
-			circleView.layer.borderColor = minor! ? UIColor(red: 0.839, green: 0.847, blue: 0.851, alpha: 1).CGColor : UIColor(red: 0.329, green: 0.831, blue: 0.690, alpha: 1).CGColor
+			titleLabel.textColor = minor ? timeLabel.textColor : UIColor(red: 0.227, green: 0.227, blue: 0.278, alpha: 1)
+			circleView.layer.borderColor = minor ? UIColor(red: 0.839, green: 0.847, blue: 0.851, alpha: 1).CGColor : UIColor(red: 0.329, green: 0.831, blue: 0.690, alpha: 1).CGColor
 		}
 	}
 	
     init(style: UITableViewCellStyle, reuseIdentifier: String) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
 		minor = false
+		
+		super.init(style: style, reuseIdentifier: reuseIdentifier)
 		
 		contentView.addSubview(titleLabel)
 		contentView.addSubview(timeLabel)
