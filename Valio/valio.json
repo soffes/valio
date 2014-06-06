@@ -1,0 +1,196 @@
+[
+  {
+    "title": "Thursday",
+    "subtitle": "June 5th",
+    "items": [
+      {
+        "time": "8:00 am",
+        "title": "Breakfast",
+        "minor": true
+      },
+      {
+        "time": "9:30 am",
+        "title": "Welcome",
+        "minor": true
+      },
+      {
+        "time": "9:45 am",
+        "title": "Geoff Teehan"
+      },
+      {
+        "time": "10:45 am",
+        "title": "Keiran Flangian"
+      },
+      {
+        "time": "11:05 am",
+        "title": "Chuck Longanecker"
+      },
+      {
+        "time": "11:25 am",
+        "title": "Jennet Liaw"
+      },
+      {
+        "time": "11:45 am",
+        "title": "Ryan Hudson-Peralta"
+      },
+      {
+        "time": "12:30 pm",
+        "title": "Lunch",
+        "minor": true
+      },
+      {
+        "time": "2:00 pm",
+        "title": "Lee Rubenstein",
+      },
+      {
+        "time": "3:00 pm",
+        "title": "Michael Flarup"
+      },
+      {
+        "time": "4:00 pm",
+        "title": "Maker's Moment"
+      },
+      {
+        "time": "7:30 pm",
+        "title": "Drink Night",
+        "minor": false
+      },
+    ]
+  },
+  {
+    "title": "Friday",
+    "subtitle": "June 6th",
+    "items": [
+      {
+        "time": "8:00 am",
+        "title": "Breakfast",
+        "minor": true
+      },
+      {
+        "time": "9:30 am",
+        "title": "Welcome",
+        "minor": true
+      },
+      {
+        "time": "10:00 am",
+        "title": "Ryan Carson"
+      },
+      {
+        "time": "11:00 am",
+        "title": "Erik Bye"
+      },
+      {
+        "time": "11:20 am",
+        "title": "Josh Puckett"
+      },
+      {
+        "time": "11:40 am",
+        "title": "Kim Wouters"
+      },
+      {
+        "time": "12:30 pm",
+        "title": "Lunch",
+        "minor": true
+      },
+      {
+        "time": "2:00 pm",
+        "title": "Chloe Park"
+      },
+      {
+        "time": "3:00 pm",
+        "title": "Sam Soffes"
+      },
+      {
+        "time": "3:20 pm",
+        "title": "Maker's Moment"
+      }
+    ]
+  },
+  {
+    "title": "Saturday",
+    "subtitle": "June 7th",
+    "items": [
+      {
+        "time": "8:00 am",
+        "title": "Breakfast",
+        "minor": true
+      },
+      {
+        "time": "9:30 am",
+        "title": "Welcome",
+        "minor": true
+      },
+      {
+        "time": "10:00 am",
+        "title": "Amy & Jennifer Hood"
+      },
+      {
+        "time": "11:00 am",
+        "title": "Bradley Munkowitz"
+      },
+      {
+        "time": "12:00 pm",
+        "title": "Jared Erondu"
+      },
+      {
+        "time": "12:15 pm",
+        "title": "Lunch",
+        "minor": true
+      },
+      {
+        "time": "2:00 pm",
+        "title": "Samantha Kallis"
+      },
+      {
+        "time": "3:00 pm",
+        "title": "Merek Davis"
+      },
+      {
+        "time": "4:00 pm",
+        "title": "Marker's Moment"
+      },
+    ]
+  },
+  {
+    "title": "Sunday",
+    "subtitle": "June 8th",
+    "items": [
+      {
+        "time": "8:00 am",
+        "title": "Breakfast",
+        "minor": true
+      },
+      {
+        "time": "9:30 am",
+        "title": "Welcome",
+        "minor": true
+      },
+      {
+        "time": "10:00 am",
+        "title": "Darius Monsef"
+      },
+      {
+        "time": "11:00 am",
+        "title": "Rhett Andersen"
+      },
+      {
+        "time": "11:30 am",
+        "title": "Shane Mielke"
+      },
+      {
+        "time": "12:30 pm",
+        "title": "Bryan Jones"
+      },
+      {
+        "time": "1:15 pm",
+        "title": "Closing",
+        "minor": true
+      },
+      {
+        "time": "1:30 pm",
+        "title": "Lunch",
+        "minor": true
+      }
+    ]
+  }
+]
