@@ -10,7 +10,7 @@ import UIKit
 
 class ScheduleTableViewController: UITableViewController {
 
-	@lazy var data: NSArray = {
+	@lazy var 📅: NSArray = {
 		let path = NSBundle.mainBundle().pathForResource("valio", ofType: "json")
 		let data = NSData.dataWithContentsOfFile(path, options: nil, error: nil)
 		return NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSArray
@@ -26,11 +26,11 @@ class ScheduleTableViewController: UITableViewController {
     }
 	
 	override func numberOfSectionsInTableView(tableView: UITableView!) -> Int {
-		return data.count
+		return 📅.count
 	}
 
     override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
-		let day = data[section] as NSDictionary
+		let day = 📅[section] as NSDictionary
 		let items = day["items"] as NSArray
 		return items.count
     }
@@ -38,7 +38,7 @@ class ScheduleTableViewController: UITableViewController {
     override func tableView(tableView: UITableView?, cellForRowAtIndexPath indexPath: NSIndexPath?) -> UITableViewCell? {
 		let cell = tableView!.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath!) as ItemTableViewCell
 		if let path = indexPath {
-			let day = data[path.section] as NSDictionary
+			let day = 📅[path.section] as NSDictionary
 			let items = day["items"] as NSArray
 			let item = items[path.row] as NSDictionary
 			
@@ -56,12 +56,12 @@ class ScheduleTableViewController: UITableViewController {
     }
 	
 	override func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String! {
-		let day = data[section] as NSDictionary
+		let day = 📅[section] as NSDictionary
 		return day["title"] as String
 	}
 	
 	override func tableView(tableView: UITableView!, viewForHeaderInSection section: Int) -> UIView! {
-		let day = data[section] as NSDictionary
+		let day = 📅[section] as NSDictionary
 		let view = SectionHeaderView()
 		view.titleLabel.text = (day["title"] as String).uppercaseString
 		return view
