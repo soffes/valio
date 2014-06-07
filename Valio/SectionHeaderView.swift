@@ -26,11 +26,11 @@ class SectionHeaderView: UIVisualEffectView {
 	}()
 	
 	convenience init() {
-		self.init(effect: UIBlurEffect(style: .ExtraLight))
+		self.init(effect: UIBlurEffect(style: .Light))
 	}
 	
     init(effect: UIVisualEffect) {
-        super.init(effect: UIBlurEffect(style: .Light))
+        super.init(effect: effect)
 		
 		contentView.addSubview(titleLabel)
 		contentView.addSubview(lineView)
