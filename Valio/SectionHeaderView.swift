@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SectionHeaderView: UIVisualEffectView {
+class SectionHeaderView: UIView {
 
 	@lazy var titleLabel: UILabel = {
 		let label = UILabel()
@@ -26,14 +26,15 @@ class SectionHeaderView: UIVisualEffectView {
 	}()
 	
 	convenience init() {
-		self.init(effect: UIBlurEffect(style: .Light))
+		self.init(frame: CGRectZero)
 	}
 	
-    init(effect: UIVisualEffect) {
-        super.init(effect: effect)
+	init(frame: CGRect) {
+        super.init(frame: frame)
 		
-		contentView.addSubview(titleLabel)
-		contentView.addSubview(lineView)
+		backgroundColor = UIColor(white: 1, alpha: 0.95)
+		addSubview(titleLabel)
+		addSubview(lineView)
 		
 		let views = [
 			"titleLabel": titleLabel,
@@ -43,8 +44,9 @@ class SectionHeaderView: UIVisualEffectView {
 		let metrics = [
 			"verticalMargin": 8
 		]
-		contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|-[titleLabel]|", options: nil, metrics: nil, views: views))
-		contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-(verticalMargin)-[titleLabel]-(verticalMargin)-[lineView(1)]|", options: nil, metrics: metrics, views: views))
-		contentView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|[lineView]|", options: nil, metrics: metrics, views: views))
+		
+		addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|-[titleLabel]|", options: nil, metrics: nil, views: views))
+		addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-(verticalMargin)-[titleLabel]-(verticalMargin)-[lineView(1)]|", options: nil, metrics: metrics, views: views))
+		addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|[lineView]|", options: nil, metrics: metrics, views: views))
     }
 }
