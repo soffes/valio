@@ -20,8 +20,6 @@
 		2110726E19411B14003C2A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2110726F19411B14003C2A67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2110727119411B14003C2A67 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		2110727C19411B14003C2A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2110727D19411B14003C2A67 /* ValioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValioTests.swift; sourceTree = "<group>"; };
 		2110728919411C03003C2A67 /* ScheduleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableViewController.swift; sourceTree = "<group>"; };
 		2110728B19412E5F003C2A67 /* valio.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = valio.json; sourceTree = "<group>"; };
 		21E1A45219423F5200A69E93 /* SectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
@@ -43,7 +41,6 @@
 			isa = PBXGroup;
 			children = (
 				2110726C19411B14003C2A67 /* Valio */,
-				2110727A19411B14003C2A67 /* ValioTests */,
 				2110726B19411B14003C2A67 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -74,23 +71,6 @@
 			children = (
 				2110728B19412E5F003C2A67 /* valio.json */,
 				2110726E19411B14003C2A67 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2110727A19411B14003C2A67 /* ValioTests */ = {
-			isa = PBXGroup;
-			children = (
-				2110727D19411B14003C2A67 /* ValioTests.swift */,
-				2110727B19411B14003C2A67 /* Supporting Files */,
-			);
-			path = ValioTests;
-			sourceTree = "<group>";
-		};
-		2110727B19411B14003C2A67 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2110727C19411B14003C2A67 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
