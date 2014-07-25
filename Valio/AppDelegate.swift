@@ -11,7 +11,7 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
-	@lazy var window: UIWindow = {
+	lazy var window: UIWindow = {
 		let win = UIWindow(frame: UIScreen.mainScreen().bounds)
 		win.backgroundColor = UIColor.whiteColor()
 		win.rootViewController = UINavigationController(rootViewController: ScheduleTableViewController())

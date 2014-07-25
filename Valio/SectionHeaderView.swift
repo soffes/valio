@@ -10,7 +10,7 @@ import UIKit
 
 class SectionHeaderView: UIView {
 
-	@lazy var titleLabel: UILabel = {
+	lazy var titleLabel: UILabel = {
 		let label = UILabel()
 		label.setTranslatesAutoresizingMaskIntoConstraints(false)
 		label.font = UIFont(name: "Avenir", size: 18)
@@ -18,7 +18,7 @@ class SectionHeaderView: UIView {
 		return label
 	}()
 	
-	@lazy var lineView: UIView = {
+	lazy var lineView: UIView = {
 		let view = UIView()
 		view.setTranslatesAutoresizingMaskIntoConstraints(false)
 		view.backgroundColor = UIColor(red: 0.906, green: 0.914, blue: 0.918, alpha: 1)

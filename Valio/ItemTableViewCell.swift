@@ -10,14 +10,14 @@ import UIKit
 import QuartzCore
 
 class ItemTableViewCell: UITableViewCell {
-	@lazy var titleLabel: UILabel = {
+	lazy var titleLabel: UILabel = {
 		let label = UILabel()
 		label.setTranslatesAutoresizingMaskIntoConstraints(false)
 		label.font = UIFont(name: "Avenir", size: 16)
 		return label
 	}()
 	
-	@lazy var timeLabel: UILabel = {
+	lazy var timeLabel: UILabel = {
 		let label = UILabel()
 		label.setTranslatesAutoresizingMaskIntoConstraints(false)
 		label.font = UIFont(name: "Avenir-Light", size: 16)
@@ -26,14 +26,14 @@ class ItemTableViewCell: UITableViewCell {
 		return label
 	}()
 	
-	@lazy var lineView: UIView = {
+	lazy var lineView: UIView = {
 		let view = UIView()
 		view.setTranslatesAutoresizingMaskIntoConstraints(false)
 		view.backgroundColor = UIColor(red: 0.906, green: 0.914, blue: 0.918, alpha: 1)
 		return view
 	}()
 	
-	@lazy var circleView: UIView = {
+	lazy var circleView: UIView = {
 		let view = UIView()
 		view.setTranslatesAutoresizingMaskIntoConstraints(false)
 		view.backgroundColor = UIColor.whiteColor()

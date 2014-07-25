@@ -10,7 +10,7 @@ import UIKit
 
 class ScheduleTableViewController: UITableViewController {
 
-	@lazy var 📅: NSArray = {
+	lazy var 📅: NSArray = {
 		let path = NSBundle.mainBundle().pathForResource("valio", ofType: "json")
 		let data = NSData.dataWithContentsOfFile(path, options: nil, error: nil)
 		return NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSArray
