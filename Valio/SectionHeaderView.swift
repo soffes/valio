@@ -9,6 +9,8 @@
 import UIKit
 
 class SectionHeaderView: UIView {
+	
+	// MARK: - Properties
 
 	lazy var titleLabel: UILabel = {
 		let label = UILabel()
@@ -24,12 +26,15 @@ class SectionHeaderView: UIView {
 		view.backgroundColor = UIColor(red: 0.906, green: 0.914, blue: 0.918, alpha: 1)
 		return view
 	}()
+
+
+	// MARK: - Initialiers
 	
-	convenience init() {
+	convenience override init() {
 		self.init(frame: CGRectZero)
 	}
 	
-	init(frame: CGRect) {
+	override init(frame: CGRect) {
         super.init(frame: frame)
 		
 		backgroundColor = UIColor(white: 1, alpha: 0.95)
@@ -49,4 +54,8 @@ class SectionHeaderView: UIView {
 		addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-(verticalMargin)-[titleLabel]-(verticalMargin)-[lineView(1)]|", options: nil, metrics: metrics, views: views))
 		addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("|[lineView]|", options: nil, metrics: metrics, views: views))
     }
+
+	required init(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+	}
 }

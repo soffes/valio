@@ -10,6 +10,9 @@ import UIKit
 import QuartzCore
 
 class ItemTableViewCell: UITableViewCell {
+	
+	// MARK: - Properties
+
 	lazy var titleLabel: UILabel = {
 		let label = UILabel()
 		label.setTranslatesAutoresizingMaskIntoConstraints(false)
@@ -42,16 +45,17 @@ class ItemTableViewCell: UITableViewCell {
 		return view
 	}()
 	
-	var minor: Bool {
+	var minor: Bool = false {
 		didSet {
 			titleLabel.textColor = minor ? timeLabel.textColor : UIColor(red: 0.227, green: 0.227, blue: 0.278, alpha: 1)
 			circleView.layer.borderColor = minor ? UIColor(red: 0.839, green: 0.847, blue: 0.851, alpha: 1).CGColor : UIColor(red: 0.329, green: 0.831, blue: 0.690, alpha: 1).CGColor
 		}
 	}
+
+
+	// MARK: - Initializers
 	
-    init(style: UITableViewCellStyle, reuseIdentifier: String) {
-		minor = false
-		
+    override init(style: UITableViewCellStyle, reuseIdentifier: String) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
 		
 		contentView.addSubview(titleLabel)
@@ -81,4 +85,8 @@ class ItemTableViewCell: UITableViewCell {
 		contentView.addConstraint(NSLayoutConstraint(item: circleView, attribute: .Width, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 14))
 		contentView.addConstraint(NSLayoutConstraint(item: circleView, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: .NotAnAttribute, multiplier: 1, constant: 14))
     }
+
+	required init(coder aDecoder: NSCoder) {
+		super.init(coder: aDecoder)
+	}
 }
