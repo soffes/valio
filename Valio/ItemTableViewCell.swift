@@ -55,7 +55,7 @@ class ItemTableViewCell: UITableViewCell {
 
 	// MARK: - Initializers
 	
-    override init(style: UITableViewCellStyle, reuseIdentifier: String) {
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
 		super.init(style: style, reuseIdentifier: reuseIdentifier)
 		
 		contentView.addSubview(titleLabel)
