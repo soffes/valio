@@ -16,14 +16,14 @@ class ItemTableViewCell: UITableViewCell {
 	lazy var titleLabel: UILabel = {
 		let label = UILabel()
 		label.setTranslatesAutoresizingMaskIntoConstraints(false)
-		label.font = UIFont(name: "Avenir", size: 16)
+		label.font = UIFont(name: "Avenir", size: 12)
 		return label
 	}()
 	
 	lazy var timeLabel: UILabel = {
 		let label = UILabel()
 		label.setTranslatesAutoresizingMaskIntoConstraints(false)
-		label.font = UIFont(name: "Avenir-Light", size: 16)
+		label.font = UIFont(name: "Avenir-Light", size: 12)
 		label.textColor = UIColor(red: 0.631, green: 0.651, blue: 0.678, alpha: 1)
 		label.textAlignment = .Right
 		return label
