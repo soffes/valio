@@ -13,7 +13,7 @@ class ScheduleTableViewController: UITableViewController {
 	lazy var 📅: NSArray = {
 		let path = NSBundle.mainBundle().pathForResource("valio", ofType: "json")!
 		let data = NSData(contentsOfFile: path, options: nil, error: nil)!
-		return NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as NSArray
+		return NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as! NSArray
 	}()
 	
     override func viewDidLoad() {
@@ -30,16 +30,16 @@ class ScheduleTableViewController: UITableViewController {
 	}
 
     override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
-		let day = 📅[section] as NSDictionary
-		let items = day["items"] as NSArray
+		let day = 📅[section] as! NSDictionary
+		let items = day["items"] as! NSArray
 		return items.count
     }
 
 	override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as ItemTableViewCell
-		let day = 📅[indexPath.section] as NSDictionary
-		let items = day["items"] as NSArray
-		let item = items[indexPath.row] as NSDictionary
+		let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! ItemTableViewCell
+		let day = 📅[indexPath.section] as! NSDictionary
+		let items = day["items"] as! NSArray
+		let item = items[indexPath.row] as! NSDictionary
 		
 		cell.titleLabel.text = item["title"] as? String
 		cell.timeLabel.text = item["time"] as? String
@@ -54,14 +54,14 @@ class ScheduleTableViewController: UITableViewController {
     }
 	
 	override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-		let day = 📅[section] as NSDictionary
+		let day = 📅[section] as! NSDictionary
 		return day["title"] as? String
 	}
 	
 	override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-		let day = 📅[section] as NSDictionary
+		let day = 📅[section] as! NSDictionary
 		let view = SectionHeaderView()
-		view.titleLabel.text = (day["title"] as String).uppercaseString
+		view.titleLabel.text = (day["title"] as! String).uppercaseString
 		return view
 	}
 	
